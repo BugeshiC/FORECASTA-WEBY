@@ -3,63 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORECASTA</title>
+    <title>FORECASTA - ERP Solutions</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Header with Logo and Navigation -->
-    <header>
-        <img src="FORECASTA CPY.png" alt="FORECASTA Logo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#solutions">Solutions</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#login" class="button">Login</a></li>
-            </ul>
+    <!-- Landing Page Section -->
+    <header class="landing-page" id="home">
+        <img src="images/FORECASTA CPY.png" alt="FORECASTA Logo" class="logo">
+        <h1>FORECASTA</h1>
+        <p class="slogan">Let's see what happens</p>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+            <a href="#search">Search ERP Services</a>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>LET'S SEE WHAT HAPPENS</h1>
-        <p>Your Partner in ERP Solutions</p>
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service-item" onclick="showServiceDetails('ERP Customization')">
+                <h3>ERP Customization</h3>
+                <p>Flexible solutions tailored to your needs.</p>
+            </div>
+            <div class="service-item" onclick="showServiceDetails('Data Integration')">
+                <h3>Data Integration</h3>
+                <p>Seamlessly integrate your existing systems.</p>
+            </div>
+            <div class="service-item" onclick="showServiceDetails('Real-Time Analytics')">
+                <h3>Real-Time Analytics</h3>
+                <p>Empowering insights at every decision.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ERP Service Search & Customization Flow -->
+    <section class="search-section" id="search">
+        <h2>Search ERP Services</h2>
+        <input type="text" id="search-bar" placeholder="Search ERP solutions...">
+        <button onclick="promptCompanyDetails()">Search</button>
+    </section>
+
+    <!-- ERP Customization Portal -->
+    <section class="customization-portal" id="customization-portal">
+        <h2>ERP Customization Portal</h2>
+        <div class="progress-tracker">Progress: <span id="progress">0%</span></div>
+        <div class="options"> <!-- Options will be dynamically updated --> </div>
     </section>
 
     <!-- About Us Section -->
-    <section id="about" class="about">
-        <h2>About FORECASTA</h2>
-        <p>We provide industry-leading ERP solutions tailored to your business needs...</p>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div class="service-item">ERP Customization</div>
-        <div class="service-item">Data Analytics</div>
-        <div class="service-item">Inventory Management</div>
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>FORECASTA is dedicated to bringing innovative ERP solutions tailored to your business needs.</p>
+        <p>Our mission is to transform business operations through effective, data-driven solutions.</p>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section class="contact" id="contact">
         <h2>Contact Us</h2>
-        <form action="#" method="post">
+        <form>
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Message"></textarea>
-            <button type="submit" class="button">Submit</button>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
         </form>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 FORECASTA. All rights reserved.</p>
-    </footer>
-
-    <!-- Link to JavaScript -->
     <script src="script.js"></script>
-
 </body>
 </html>
