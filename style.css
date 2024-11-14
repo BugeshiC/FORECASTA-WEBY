@@ -40,25 +40,9 @@ h1 {
 }
 
 /* Services Section */
-.services {
-    padding: 50px;
-    background-color: #eef3f9; /* Soft blue background */
-    text-align: center;
-}
-
-h2 {
-    color: #0b2946; /* Dark blue headings */
-}
-
-.service-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
 .service-item {
     background-color: #ffffff;
-    border: 1px solid #4b6d93; /* Border matches brand colors */
+    border: 1px solid #4b6d93;
     padding: 20px;
     border-radius: 8px;
     width: 200px;
@@ -69,12 +53,23 @@ h2 {
 
 .service-item:hover {
     transform: scale(1.05);
-    background-color: #e0eaf1; /* Slight color change on hover */
+    background-color: #e0eaf1;
 }
 
 .service-item h3 {
     color: #0b2946;
 }
+
+.service-details {
+    display: none; /* Hide details by default */
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #eef3f9; /* Light background for detail section */
+    border-radius: 8px;
+    color: #0b2946;
+    font-size: 0.9rem;
+}
+
 
 /* Search Section */
 .search-section {
