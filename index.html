@@ -89,6 +89,19 @@
         </form>
     </section>
 
-    <script src="script.js"></script>
+   <script>
+function toggleDetails(id) {
+    // Get the details element by ID
+    var details = document.getElementById(id);
+
+    // Toggle the display property
+    if (details.style.display === "none" || details.style.display === "") {
+        details.style.display = "block";
+    } else {
+        details.style.display = "none";
+    }
+}
+</script>
+
 </body>
 </html>
