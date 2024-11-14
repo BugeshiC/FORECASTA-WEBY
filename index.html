@@ -22,23 +22,40 @@
     </header>
 
     <!-- Services Section -->
-    <section class="services" id="services">
-        <h2>Our Services</h2>
-        <div class="service-list">
-            <div class="service-item" onclick="showServiceDetails('ERP Customization')">
-                <h3>ERP Customization</h3>
-                <p>Flexible solutions tailored to your needs.</p>
-            </div>
-            <div class="service-item" onclick="showServiceDetails('Data Integration')">
-                <h3>Data Integration</h3>
-                <p>Seamlessly integrate your existing systems.</p>
-            </div>
-            <div class="service-item" onclick="showServiceDetails('Real-Time Analytics')">
-                <h3>Real-Time Analytics</h3>
-                <p>Empowering insights at every decision.</p>
-            </div>
+   <div class="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+        
+        <!-- ERP Customization Service Item -->
+        <div class="service-item" onclick="toggleDetails('erpDetails')">
+            <h3>ERP Customization</h3>
+            <p>Flexible solutions tailored to your needs.</p>
         </div>
-    </section>
+        <div id="erpDetails" class="service-details">
+            <p>Our ERP customization service provides tailored solutions to match your specific business needs. We help you streamline processes, improve efficiency, and scale with ease. From module selection to user-specific configurations, FORECASTA ensures your ERP system is a perfect fit for your operations.</p>
+        </div>
+
+        <!-- Data Integration Service Item -->
+        <div class="service-item" onclick="toggleDetails('dataIntegrationDetails')">
+            <h3>Data Integration</h3>
+            <p>Seamlessly integrate your existing systems.</p>
+        </div>
+        <div id="dataIntegrationDetails" class="service-details">
+            <p>With our data integration services, FORECASTA enables you to connect and unify disparate data sources. We ensure smooth, real-time data flow across all departments, improving accessibility, accuracy, and decision-making power throughout your organization.</p>
+        </div>
+
+        <!-- Real-Time Analytics Service Item -->
+        <div class="service-item" onclick="toggleDetails('analyticsDetails')">
+            <h3>Real-Time Analytics</h3>
+            <p>Empowering insights at every decision.</p>
+        </div>
+        <div id="analyticsDetails" class="service-details">
+            <p>Our real-time analytics services empower you to make data-driven decisions with confidence. Access up-to-the-minute insights, identify trends, and make proactive adjustments to keep your business on the right track.</p>
+        </div>
+        
+    </div>
+</div>
+
 
     <!-- ERP Service Search & Customization Flow -->
     <section class="search-section" id="search">
